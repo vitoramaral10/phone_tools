@@ -1,6 +1,6 @@
-# phone_tools
+# Phone Tools
 
-A new Flutter plugin project.
+Tool plugin for working with phones
 
 ## Getting Started
 
