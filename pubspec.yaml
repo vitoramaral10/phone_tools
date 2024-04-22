@@ -2,21 +2,15 @@ name: phone_tools
 description: "Tool plugin for working with phones"
 version: 0.0.1
 homepage: https://github.com/vitoramaral10/phone_tools
+issue_tracker: https://github.com/vitoramaral10/phone_tools/issues
 
 environment:
   sdk: ">=3.3.4 <4.0.0"
-  flutter: ">=3.3.0"
-  android: ">=21.0.0 <30.0.0"
-  ios: ">=9.0.0 <14.0.0"
-  linux: ">=0.1.0 <1.0.0"
-  macos: ">=0.1.0 <1.0.0"
-  web: ">=2.7.0 <3.0.0"
-  windows: ">=0.1.0 <1.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -28,26 +22,21 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-  # This section identifies this Flutter project as a plugin project.
-  # The 'pluginClass' specifies the class (in Java, Kotlin, Swift, Objective-C, etc.)
-  # which should be registered in the plugin registry. This is required for
-  # using method channels.
-  # The Android 'package' specifies package in which the registered class is.
-  # This is required for using method channels on Android.
-  # The 'ffiPlugin' specifies that native code should be built and bundled.
-  # This is required for using `dart:ffi`.
-  # All these are used by the tooling to maintain consistency when
-  # adding or updating assets for this project.
   plugin:
     platforms:
-      # This plugin project was generated without specifying any
-      # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
-      # then add platforms following the instruction here:
-      # https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms
-      # -------------------
-      some_platform:
-        pluginClass: somePluginClass
-    # -------------------
+      android:
+        package: com.vitoramaral10.phone_tools
+        pluginClass: PhoneTools
+      ios:
+        pluginClass: PhoneTools
+      web:
+        pluginClass: PhoneTools
+      linux:
+        pluginClass: PhoneTools
+      macos:
+        pluginClass: PhoneTools
+      windows:
+        pluginClass: PhoneTools
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
