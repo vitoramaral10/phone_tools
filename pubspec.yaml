@@ -1,7 +1,7 @@
 name: phone_tools
-description: "A new Flutter plugin project."
+description: "Tool plugin for working with phones"
 version: 0.0.1
-homepage:
+homepage: https://github.com/vitoramaral10/phone_tools
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
